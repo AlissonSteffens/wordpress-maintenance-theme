@@ -1,7 +1,9 @@
-<?php get_header()?>
+<?php
+get_header();
+?>
 
 
-<main role="main" >
+<main role="main">
   <section class="hero is-light is-fullheight">
     <div class="hero-body">
       <div class="container">
@@ -9,12 +11,12 @@
           Site em Manutenção
         </h1>
         <h2 class="subtitle">
-          Este site encontra-se em manutenção temporária
+          Este site está em manutenção, por favor, volte mais tarde.
         </h2>
       </div>
     </div>
   </section>
+
 </main>
 
-
-<?php get_footer()?>
+<?php get_footer() ?>

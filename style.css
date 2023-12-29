@@ -7,27 +7,48 @@ Version:1.1
 Author: Alisson Steffens
 Author URI: https://alissonsteffens.com
 */
-.hero {
-  background: #d7cd12;
-  background-color: #d7cd12 !important;
-  background-color: #d7cd12;
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e5df71' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  text-align: center;
+html {
+  margin: 0 !important;
 }
 
+.hero {
+  text-align: center;
+  overflow: hidden !important;
+}
 .hero .title {
   font-size: 4rem;
   font-weight: 800;
+  color: #f1c40f !important;
+}
+.hero .subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3498db !important;
+}
+.hero .logo-image {
+  max-width: 90%;
+  max-height: 90%;
+  width: max(90%, 200px);
+  margin: auto;
+}
+@media screen and (min-width: 769px) {
+  .hero .logo-image {
+    width: max(50%, 200px);
+  }
 }
 
 .hero.is-fullheight {
-  min-height: 90vh !important;
+  min-height: 94dvh !important;
+}
+
+footer {
+  z-index: 100;
 }
 
 .footer {
   text-align: center;
-  background-color: white;
-  max-height: 5vh !important;
+  background-color: #f1c40f;
+  min-height: 6dvh !important;
   padding: 1rem;
-}
-/*# sourceMappingURL=style.css.map */
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */
